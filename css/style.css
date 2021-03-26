@@ -640,6 +640,32 @@ header {
   top: 97px;
   left: 71px; }
 
+.focus__images {
+  position: relative;
+  margin: 94px 0 95px 10px; }
+  .focus__images .focus__image-backImg {
+    position: relative;
+    width: 383px;
+    height: 267px;
+    border-radius: 15px; }
+  .focus__images .focus__image-backImgSecond {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    width: 383px;
+    height: 267px;
+    border-radius: 15px; }
+  .focus__images .focus__image-frontImg {
+    position: absolute;
+    top: -22px;
+    left: 48px;
+    width: 445px;
+    height: 311px;
+    border-radius: 15px; }
+  .focus__images .images__background {
+    display: flex;
+    position: absolute; }
+
 .focus__container {
   background-color: #ED4C5C;
   height: 500px;
@@ -663,7 +689,8 @@ header {
       font-size: 14px;
       line-height: 19.6px;
       text-align: justify;
-      margin-bottom: 45px; }
+      margin-bottom: 45px;
+      max-width: 65%; }
 
 .focus__logo-box {
   display: flex; }
