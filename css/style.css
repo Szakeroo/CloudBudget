@@ -484,7 +484,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 660px;
   background-color: #FAFAFA; }
 
@@ -547,3 +547,48 @@ header {
   text-decoration: none;
   margin: 25px 0;
   text-transform: capitalize; }
+
+.technology__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px; }
+
+.technology__header {
+  margin: 63px 0;
+  font-weight: 600;
+  font-size: 36px;
+  color: #000000;
+  line-height: 43.2px;
+  margin-bottom: 52px; }
+
+.technology__wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.technology__box {
+  display: flex;
+  text-align: center;
+  flex-direction: column; }
+  .technology__box .box__image-container {
+    position: relative; }
+    .technology__box .box__image-container .box__image-header {
+      font-size: 100px;
+      line-height: 120px;
+      color: rgba(16, 16, 16, 0.08);
+      font-weight: 700; }
+
+.cloud_logo {
+  position: absolute;
+  bottom: 2px;
+  left: 93px; }
+
+.cloud_arrow-logo {
+  position: absolute;
+  top: 94px;
+  left: 118px; }
+
+.complete_logo {
+  position: absolute;
+  top: 72px;
+  left: 89px; }
