@@ -12,3 +12,10 @@
     outline: none;
     border: none;
 }
+@mixin headerText {
+    margin: 63px 0;
+    font-weight: 600;
+    font-size: 36px;
+    color : $color-black;
+    line-height: 43.2px;
+}
