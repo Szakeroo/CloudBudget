@@ -1,0 +1,45 @@
+.header__container {
+    height: 782px;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%),url("../../assets/main_kv.png");
+    color : $color-white;
+    background-repeat: no-repeat;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+}
+.header__logo-container{
+    margin-top: 59px;;
+    display: flex;
+    color: $color-white;
+    margin-left: -201px;
+    .logo__container-image{
+        width: 24.65px;
+        height: 17.4px;
+        margin-right: 9.9px;
+    }
+    .logo__container-text{
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+}
+.header__navigation{
+    margin-top: 58px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navigation__item{
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 10px;
+    .navigation__item-link{
+        text-decoration: none;
+        color: $color-white;
+        outline: none;
+        border: none;
+    }
+}

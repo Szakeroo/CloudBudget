@@ -1,0 +1,23 @@
+.kv__body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: calc(199px);
+    text-align: center;
+    .kv__body-headline{
+        font-size: 72px;
+        font-weight: 700;
+        letter-spacing: 5%;
+    }
+    .kv__body-text{
+        margin: 39px 0;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .kv__body-button{
+        @include button-mixin($color-lightRed, $color-white);
+        background-color: $color-white;
+    }
+}
