@@ -1,0 +1,57 @@
+.focus__container {
+    background-color: $color-lightRed;
+    height: 500px;
+    width: 100%;
+    color: $color-white;
+
+}
+.focus__wrapper {
+    display: flex;
+    .focus__text-box {
+        display: flex;
+        flex-direction: column;
+        margin: 122px 20px 50px 165px;
+        .focus__text-header{
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 43.2px;
+            text-align: justify;
+            margin-bottom: 35px;
+        }
+        .focus__text-description {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19.6px;
+            text-align: justify;
+            margin-bottom: 45px;
+        }
+    }
+}
+.focus__logo-box {
+    display: flex;
+    
+    .focus__rectangles {
+        position: relative;
+        .rectangle-2 {
+            position: absolute;
+            top: -1px;
+            left: 2px;
+        }
+        .rectangle-3 {
+            position: absolute;
+            top: 14px;
+            left: 2px;
+        }
+        .rectangle-4 {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+        }
+    }
+}
+.avast__image {
+    margin: 0 25px 0 35px;
+}
+.windows__image {
+    
+}

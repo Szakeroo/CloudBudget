@@ -4,12 +4,12 @@
 @import "abstracts/variables";
 
 @import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
+@import "base/grid";
 
 @import "partials/header";
 @import "partials/kv-body";
 @import "partials/features";
 @import "partials/technology";
+@import "partials/focus";
+@import "base/base";
 
