@@ -16,6 +16,7 @@
     display: flex;
     text-align: center;
     flex-direction: column;
+    padding: 0 15px;
     .box__image-container {
         position: relative;
         .box__image-header {
@@ -25,19 +26,49 @@
             font-weight: 700;
         }
     }
+    .box__text-container{
+        text-align: center;
+        
+        .text__container-header{
+            margin: 30px 0 20px 0;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .text__container-description{
+            font-weight: 400;
+            font-size: 12px;
+        }
+    }
 }
+
 .cloud_logo {
     position: absolute;
     bottom: 2px;
-    left: 93px;
+    left: 58px;
 }
 .cloud_arrow-logo {
     position: absolute;
     top: 94px;
-    left: 118px;
+    left: 83px;
 }
 .complete_logo {
     position: absolute;
     top: 72px;
-    left: 89px;
+    left: 61px;
+}
+.pdf__logo {
+    position: absolute;
+    top: 72px;
+    left: 63px;
+}
+.pdf__logo-partD {
+    position: absolute;
+    top: 97px;
+    left: 85px;
+}
+
+.pdf__logo-partP {
+    position: absolute;
+    top: 97px;
+    left: 71px;
 }
