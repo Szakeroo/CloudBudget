@@ -19,3 +19,16 @@
     color : $color-black;
     line-height: 43.2px;
 }
+@mixin inputStyle($inputWidth) {
+    width: $inputWidth;
+    height: 60px;
+    border-radius: 6px;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    color: rgba(19, 39, 67, 0.5);
+    padding-left: 31px;
+    &:focus {
+        border: 2px solid $color-lightRed ;
+        box-shadow: 1px 1px 5px 1px $color-lightRed ;
+    }
+}
