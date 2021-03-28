@@ -5,10 +5,12 @@
     color : $color-white;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    
 }
 header {
     display: flex;
     justify-content: space-around;
+    
 }
 .header__logo-container{
     margin-top: 59px;;
@@ -31,6 +33,7 @@ header {
     margin-right: -150px;
     display: flex;
     justify-content: space-between;
+    
     
 }
 .navigation__item{

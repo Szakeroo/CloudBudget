@@ -11,6 +11,11 @@
     background-color: $background-color;
     outline: none;
     border: none;
+    &:hover {
+        transition: 1s;
+        background-color: $text-color;
+        color: $background-color
+    }
 }
 @mixin headerText {
     margin: 63px 0;
@@ -28,7 +33,7 @@
     color: rgba(19, 39, 67, 0.5);
     padding-left: 31px;
     &:focus {
-        border: 2px solid $color-lightRed ;
-        box-shadow: 1px 1px 5px 1px $color-lightRed ;
+        // border: 2px solid $color-lightRed ;
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     }
 }

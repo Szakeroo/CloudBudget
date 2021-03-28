@@ -7,3 +7,11 @@ select {
     -webkit-appearance:none; /* Safari and Chrome */
     appearance:none;
 }
+.error {
+    border: 2px solid $color-lightRed !important;
+    box-shadow: $color-lightRed 0px 1px 2px 0px, $color-lightRed 0px 1px 3px 1px;
+    transition: 0.3s;
+}
+html {
+    scroll-behavior: smooth;
+}

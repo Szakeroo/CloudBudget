@@ -5,25 +5,58 @@ document.addEventListener('DOMContentLoaded', function () {
     const phoneNumberInput = document.getElementById("phoneNumber");
     const serviceOptionInput = document.getElementById("services");
     const submitButton = document.querySelector(".submit__btn");
-    let stringRegExp = "^[A-Za-z]{2,29}";
-    let numberRegExp = "^[0-9] {9-11}"
+    let stringRegExp = "^[AaĄąBbCcĆćDdEeĘęFfGgHhIiJjKkLlŁłMmNnŃńOoÓóPpRrSsŚśTtUuWwYyZzŹźŻż]{2,20}";
+    let numberRegExp = /^\d{9,11}$/
+
+    const resetFormData = () => {
+        firstNameInput.value = "";
+        firstNameInput.placeholder = "First Name";
+        phoneNumberInput.value = "";
+        phoneNumberInput.placeholder = "Phone Number";
+        lastNameInput.value = "";
+        lastNameInput.value.placeholder = "Last Name";
+        serviceOptionInput.value = "none";
+
+    }
     formElement.addEventListener('submit', function (e) {
         e.preventDefault();
         let listOfErrors = [];
         if (!firstNameInput.value.match(stringRegExp)) {
-            listOfErrors.push("First Name have to be between 2-29 characters and can't contain numbers");
+            listOfErrors.push("First Name have to be between 2-20 characters and can't contain numbers");
+            firstNameInput.classList.add("error");
+            firstNameInput.placeholder = "String 2-20 chars please";
         }
-        if(!lastNameInput.value.match(stringRegExp)){
-            listOfErrors.push("Last Name First Name have to be between 2-29 characters and can't contain numbers");
+        else {
+            firstNameInput.classList.remove("error");
         }
-        if(!phoneNumberInput.value.match(numberRegExp)){
-            listOfErrors.push("Only numbers please and between 9-11 characters")
+        if (!lastNameInput.value.match(stringRegExp)) {
+            listOfErrors.push("Last Name First Name have to be between 2-20 characters and can't contain numbers");
+            lastNameInput.classList.add("error");
+            lastNameInput.placeholder = "String 2-20 Chars Please";
         }
-        if(serviceOptionInput.value == "none") listOfErrors.push("You have to choose service option")
-
-        console.log(listOfErrors);
+        else {
+            lastNameInput.classList.remove("error");
+        }
+        if (!phoneNumberInput.value.match(numberRegExp)) {
+            listOfErrors.push("Only numbers please and between 9-11 characters");
+            phoneNumberInput.classList.add("error");
+            phoneNumberInput.placeholder = "Only numbers please and between 9-11 characters";
+        }
+        else {
+            phoneNumberInput.classList.remove("error");
+        }
+        if (serviceOptionInput.value == "none") {
+            listOfErrors.push("You have to choose service option");
+            serviceOptionInput.classList.add("error");
+        }
+        else {
+            serviceOptionInput.classList.remove("error");
+        }
+        if( listOfErrors.length < 1) {    
+            let fullName = firstNameInput.value + " " + lastNameInput.value;
+                  
+            alert(`Thanks ${fullName} we contact you soon`)
+            resetFormData()              
+        };
     })
-
-
-
 });

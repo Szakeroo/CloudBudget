@@ -509,6 +509,10 @@ header {
     outline: none;
     border: none;
     background-color: #ffffff; }
+    .kv__body .kv__body-button:hover {
+      transition: 1s;
+      background-color: #ED4C5C;
+      color: #ffffff; }
 
 .feature__container {
   display: flex;
@@ -758,8 +762,7 @@ header {
     color: rgba(19, 39, 67, 0.5);
     padding-left: 31px; }
     .contact__form .form__names input:focus {
-      border: 2px solid #ED4C5C;
-      box-shadow: 1px 1px 5px 1px #ED4C5C; }
+      box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; }
   .contact__form .form__names input:first-of-type {
     margin-right: 28px; }
   .contact__form .form__phone input {
@@ -772,8 +775,7 @@ header {
     padding-left: 31px;
     margin: 24px 0; }
     .contact__form .form__phone input:focus {
-      border: 2px solid #ED4C5C;
-      box-shadow: 1px 1px 5px 1px #ED4C5C; }
+      box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; }
 
 .form__select {
   position: relative;
@@ -786,8 +788,7 @@ header {
   padding-left: 31px;
   background-color: transparent; }
   .form__select:focus {
-    border: 2px solid #ED4C5C;
-    box-shadow: 1px 1px 5px 1px #ED4C5C; }
+    box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; }
 
 .select__icon {
   position: absolute;
@@ -813,6 +814,10 @@ header {
   outline: none;
   border: none;
   margin-top: 27px; }
+  .submit__btn:hover {
+    transition: 1s;
+    background-color: #ffffff;
+    color: #ED4C5C; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -824,3 +829,11 @@ select {
   -webkit-appearance: none;
   /* Safari and Chrome */
   appearance: none; }
+
+.error {
+  border: 2px solid #ED4C5C !important;
+  box-shadow: #ED4C5C 0px 1px 2px 0px, #ED4C5C 0px 1px 3px 1px;
+  transition: 0.3s; }
+
+html {
+  scroll-behavior: smooth; }
