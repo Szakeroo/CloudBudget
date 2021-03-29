@@ -14,21 +14,23 @@
       font-weight: 600;
       font-size: 36px;
       line-height: 43.2px;
-      text-align: justify;
       margin-bottom: 35px;
+      width: 65%;
     }
     .focus__text-description {
       font-weight: 400;
       font-size: 14px;
       line-height: 19.6px;
-      text-align: justify;
       margin-bottom: 45px;
-      max-width: 65%;
+      width: 65%;
     }
   }
 }
 .focus__logo-box {
   display: flex;
+   a {
+    outline: none;
+  }
 
   .focus__rectangles {
     position: relative;
@@ -51,4 +53,46 @@
 }
 .avast__image {
   margin: 0 25px 0 35px;
+}
+//Media Queries
+@media all and (max-width: 1200px){ 
+  .focus__container {
+    height: 750px;
+    .focus__wrapper {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .focus__text-box {
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    margin: 70px 0 50px 0 !important;
+    .focus__text-header {
+      text-align: center;
+      width: 100% i !important;
+    }
+    .focus__text-description {
+      text-align: center;
+      width: 100%;
+    }
+    .focus__logo-box {
+      margin-bottom: 30px;
+    }
+  }
+  .focus__images {
+    margin:  auto;
+    height: 340px;
+    // width: 100%  !important;
+    right: inherit;
+  }
+
+}
+@media all and (max-width: 850px){
+  .focus__container {
+    height: 300px;
+  }
+  .focus__images {
+    display: none;
+  }
 }

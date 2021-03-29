@@ -99,6 +99,8 @@
         position: absolute;
     }
 }
+//Media Queries
+
 @media all and (max-width: 1280px){
     .technology__container {
         height: 600px;
@@ -106,6 +108,12 @@
     .technology__wrapper {
         flex-wrap: wrap;
     }
+}
+@media all and (max-width: 827px) {
+    .technology__container {
+        height: 650px;
+    }
+
 }
 @media all and (max-width: 480px) {
     .technology__container {
