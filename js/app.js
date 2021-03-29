@@ -8,8 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const header = document.querySelector(".navigation");
     const burgerIcon = document.querySelector(".burger__wrapper");
     const burgerList = document.querySelector(".burger_list");
+    const burgerBody = document.querySelector(".burger");
     let stringRegExp = "^[AaĄąBbCcĆćDdEeĘęFfGgHhIiJjKkLlŁłMmNnŃńOoÓóPpRrSsŚśTtUuWwYyZzŹźŻż]{2,20}";
-    let numberRegExp = /^\d{9,11}$/
+    let numberRegExp = /^\d{9,11}$/;
 
     const resetFormData = () => {
         firstNameInput.value = "";
@@ -62,18 +63,17 @@ document.addEventListener('DOMContentLoaded', function () {
             //Dane gotowe do wstawienia lecz nie chcialem psuć ukladu strony wiec pozostawilem je tylko zwalidowane
         };
     })
-    
-
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", function () {
         if (window.scrollY > 140) {
             header.classList.add("sticky");
         } else {
             header.classList.remove("sticky");
         }
     })
-    burgerIcon.addEventListener("click",function(){
+    burgerIcon.addEventListener("click", function () {
         burgerList.classList.toggle("open");
+        burgerBody.classList.toggle("listopen");
     });
-    
+
 });
 
