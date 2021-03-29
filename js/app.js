@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const phoneNumberInput = document.getElementById("phoneNumber");
     const serviceOptionInput = document.getElementById("services");
     const submitButton = document.querySelector(".submit__btn");
+    const header = document.querySelector(".navigation");
+    const burgerIcon = document.querySelector(".burger__wrapper");
+    const burgerList = document.querySelector(".burger_list");
     let stringRegExp = "^[AaĄąBbCcĆćDdEeĘęFfGgHhIiJjKkLlŁłMmNnŃńOoÓóPpRrSsŚśTtUuWwYyZzŹźŻż]{2,20}";
     let numberRegExp = /^\d{9,11}$/
 
@@ -56,6 +59,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
             alert(`Thanks ${fullName} we contact you soon`)
             resetFormData()
+            //Dane gotowe do wstawienia lecz nie chcialem psuć ukladu strony wiec pozostawilem je tylko zwalidowane
         };
     })
+    
+
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 140) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    })
+    burgerIcon.addEventListener("click",function(){
+        burgerList.classList.toggle("open");
+    });
+    
 });
+
