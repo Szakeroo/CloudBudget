@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
         lastNameInput.value = "";
         lastNameInput.value.placeholder = "Last Name";
         serviceOptionInput.value = "none";
-
     }
     formElement.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -52,11 +51,11 @@ document.addEventListener('DOMContentLoaded', function () {
         else {
             serviceOptionInput.classList.remove("error");
         }
-        if( listOfErrors.length < 1) {    
+        if (listOfErrors.length < 1) {
             let fullName = firstNameInput.value + " " + lastNameInput.value;
-                  
+
             alert(`Thanks ${fullName} we contact you soon`)
-            resetFormData()              
+            resetFormData()
         };
     })
 });

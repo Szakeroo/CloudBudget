@@ -99,3 +99,22 @@
         position: absolute;
     }
 }
+@media all and (max-width: 1280px){
+    .technology__container {
+        height: 600px;
+    }
+    .technology__wrapper {
+        flex-wrap: wrap;
+    }
+}
+@media all and (max-width: 480px) {
+    .technology__container {
+        height: 1070px;
+    }
+    .technology__wrapper {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -66,3 +66,17 @@
     text-transform: capitalize;
 
 }
+@media all and (max-width: 1280px){
+    .feature__container {
+        height: 1600px;
+    }
+    .feature__wrapper {
+        flex-direction: column;
+    }
+    .feature__box {
+        background-repeat: no-repeat;
+    }
+    .manage{
+        margin: 200px 15px;
+    }
+}

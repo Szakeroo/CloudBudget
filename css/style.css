@@ -512,7 +512,8 @@ header {
     .kv__body .kv__body-button:hover {
       transition: 1s;
       background-color: #ED4C5C;
-      color: #ffffff; }
+      color: #ffffff;
+      border: 1px solid #ffffff; }
 
 .feature__container {
   display: flex;
@@ -581,6 +582,16 @@ header {
   text-decoration: none;
   margin: 25px 0;
   text-transform: capitalize; }
+
+@media all and (max-width: 1280px) {
+  .feature__container {
+    height: 1600px; }
+  .feature__wrapper {
+    flex-direction: column; }
+  .feature__box {
+    background-repeat: no-repeat; }
+  .manage {
+    margin: 200px 15px; } }
 
 .technology__container {
   display: flex;
@@ -677,6 +688,21 @@ header {
   .focus__images .images__background {
     display: flex;
     position: absolute; }
+
+@media all and (max-width: 1280px) {
+  .technology__container {
+    height: 600px; }
+  .technology__wrapper {
+    flex-wrap: wrap; } }
+
+@media all and (max-width: 480px) {
+  .technology__container {
+    height: 1070px; }
+  .technology__wrapper {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 .focus__container {
   background-color: #ED4C5C;
@@ -817,7 +843,8 @@ header {
   .submit__btn:hover {
     transition: 1s;
     background-color: #ffffff;
-    color: #ED4C5C; }
+    color: #ED4C5C;
+    border: 1px solid #ED4C5C; }
 
 body {
   font-family: "Lato", sans-serif;
