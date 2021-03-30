@@ -4,6 +4,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    // margin-top: 90px;
     .kv__body-headline{
         font-size: 72px;
         font-weight: 700;
@@ -19,6 +20,9 @@
         @include button-mixin($color-lightRed, $color-white);
         background-color: $color-white;
     }
+}
+.transparent {
+    background-color: transparent;
 }
 @media all and (max-width: 800px) {
     .kv__body {
