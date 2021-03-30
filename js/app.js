@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!firstNameInput.value.match(stringRegExp)) {
             listOfErrors.push("First Name have to be between 2-20 characters and can't contain numbers");
             firstNameInput.classList.add("error");
-            firstNameInput.placeholder = "String 2-20 chars please";
+            firstNameInput.placeholder = "Only letters min 2 max 20";
         }
         else {
             firstNameInput.classList.remove("error");
@@ -35,15 +35,15 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!lastNameInput.value.match(stringRegExp)) {
             listOfErrors.push("Last Name First Name have to be between 2-20 characters and can't contain numbers");
             lastNameInput.classList.add("error");
-            lastNameInput.placeholder = "String 2-20 Chars Please";
+            lastNameInput.placeholder = "Only letters min 2 max 20";
         }
         else {
             lastNameInput.classList.remove("error");
         }
         if (!phoneNumberInput.value.match(numberRegExp)) {
-            listOfErrors.push("Only numbers please and between 9-11 characters");
+            listOfErrors.push("Only numbers min 9 max 11");
             phoneNumberInput.classList.add("error");
-            phoneNumberInput.placeholder = "Only numbers please and between 9-11 characters";
+            phoneNumberInput.placeholder = "Only numbers min 9 max 11";
         }
         else {
             phoneNumberInput.classList.remove("error");
